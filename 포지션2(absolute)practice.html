@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>title</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+       
+       *{margin:0; padding:0;}
+       
+       
+       div{
+/*           border:5px solid lightgreen;*/
+/*           margin:10px;*/
+       }
+       
+       #other{
+           background-color:red;
+       }
+       
+       #grand{
+           background-color:blue;
+/*           position: relative;*/
+           
+       }
+       
+       #parent{
+           background-color:green;
+/*           position: relative;*/
+           
+       }
+       
+       #child{
+           background-color:pink;
+           position:relative;
+           width:50px;
+           top:50px;
+           left:50px;
+           
+       }
+
+   </style>
+
+
+</head>
+
+<body>
+
+
+<div id="other">other</div>
+
+<div id="grand">
+    grand
+    <div id="parent">
+        parent
+        <div id="child">child</div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

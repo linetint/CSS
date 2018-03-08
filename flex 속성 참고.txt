@@ -1,0 +1,106 @@
+flex 속성
+
+
+
+*부모에 주는 요소들
+
+display
+:해당 부모 태그에 display:flex를 줘서 플랙스 레이아웃을 만들수 있다
+
+
+flex-direction
+:플랙스들의 방향을 결정할 수 있다(row,column등등)
+
+
+flex-wrap
+:플랙스가 컨테이너 너비나 높이에 꽉 채울것인지 아니면 넘는건 밑줄로 내릴것인지 결정
+
+
+flex-flow
+:flex-direction과 flex-wrap을 합친 축약형 표현이다
+
+
+justify-content
+:해당 태그들을 가로로 정렬할수 있음
+:justify-content속성은 flex-direction이 row일때 사용가능
+
+
+align-items
+:해당 태그들을 세로로 정렬할수 있음
+:align-items속성은 flex-direction이 column일때 사용가능
+align-items: stretch;는 해당 부모 컨테이너 끝까지 태그를 채움(기본값)
+
+
+align-content
+:태그와 태그사이에 공백을 컨트롤함
+
+
+
+
+
+
+
+*자식에게 주는 요소들
+
+
+order
+:태그 여러개의 순서를 지정해서 지정한 순서대로 정렬할수 있다
+
+
+
+flex-grow
+:flew-grow:0은 여백을 갖지 않겠다는 의미이고
+
+1일때는 각각의 태그가 1:1:1:1:1로 나눠가진다고 생각하면 됨
+
+flex-grow가 1일때와 2일때가 차이가 없는 이유는
+1:1:1:1:1이나 2:2:2:2:2나 같기때문에
+
+또 특정 태그만 flex-grow:2를 가지고 다른 4개의 태그들은 1을 가진다고 치면
+1:2:1:1:1이기때문에 두번째 태그만 2배의 비율의 크기를 가지게 된다
+
+
+
+flex-shrink
+:flex-shrink를 주려면 해당 태그는 flex-basis 값을 가지고 있어야 한다(꼭은 아님)
+(flex-grow를 가지고 있는건 안됨)
+
+flex-basis에 px 크기를 주고 flex-shrink값에 0을 주면 해당 플랙스가 줄어들면서
+플랙스도 같이 줄어들지 않고 고정된다
+
+flex-shrink의 기본값은 1로서 1로 설정하면 반응형 웹처럼 화면 스크롤을 줄이면
+해당 플랙스도 같이 줄어든다
+
+
+만약 두개의 태그에 flex-basis로 크기를 주고 flex-shrink값을 하나는 1로
+또 하나는 2로 주면 두개의 태그가 화면이 줄어들면 1/3, 2/3(1:2)만큼의 비율로 같이 줄어든다
+
+flex-basis
+:해당 태그의 너비/높이를 지정할수 있다(px로 지정가능)
+플랙스가 가로 정렬이면 너비로 세로 정렬이면 높이로 지정된다
+
+
+
+flex
+
+
+align-self
+가장 위에 있는 부모 컨테이너를 기준으로 
+center면 가운데, 
+flex-start는 첫부분,
+flex-end는 끝부분
+
+
+
+
+
+
+
+
+
+
+플랙스 아이템(태그)를 완벽하게 가운데 놓는 방법
+justify-content: center; ->가로의 가운데 정렬
+align-items: center; ->세로의 가운데 정렬
+
+두개의 속성에 center를 준다

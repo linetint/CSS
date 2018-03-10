@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>Responsive Web2</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+       
+       *{
+           box-sizing:border-box;
+       }
+       
+       body{
+           font-family:Arial;
+           margin:0;
+       }
+       
+       .header{
+           text-align: center;
+           background: #1abc9c;
+           color:white;
+           padding:60px;
+       }
+       
+       .navbar{
+           display:flex;
+           background-color: #333;
+       }
+       
+       .navbar a{
+           text-decoration: none;
+           color:white;
+           text-align:center;
+           padding:14px 20px;
+       }
+
+       .navbar a:hover{
+           background-color:lightgray;
+           color:black;
+       }
+       
+       .container{
+           display:flex;
+/*           flex-wrap: wrap;*/
+       }
+       
+       .left{
+           flex:30%;
+           background-color:#F5DEB3;
+           padding:20px;
+       }
+       
+       .right{
+           flex:70%;
+           background-color:white;
+           padding:20px;
+       }
+       
+       .img{
+           background-color:#FFF0F5;
+           width:100%;
+           padding:20px;
+       }
+       
+       .img1{
+           height:200px;
+       }
+       
+       .img2{
+           height:60px;
+           margin-bottom:20px;
+       }
+       
+       .footer{
+           text-align:center;
+           background-color:#1abc9c;
+           color:white;
+           padding:20px;
+       }
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+<!--Header-->
+<div class="header">
+    <h1>My Website</h1>
+    <p>With a <b>flexible</b> layout.</p>
+</div>
+
+
+<!--Navigation Bar-->
+<div class="navbar">
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+    <a href="#">Link</a>
+</div>
+
+
+<!--The flexible grid(content)-->
+<div class="container">
+   
+    <div class="left">
+
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
+        <div class="img img1">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit ame.</p>
+        <div class="img img2">Image</div>
+        <div class="img img2">Image</div>
+        <div class="img img2">Image</div>
+
+    </div>
+
+
+    <div class="right">
+
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="img img1">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+        <br>
+
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="img img1">Image</div>
+        <p>Some text..</p>
+        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+    </div>
+
+</div>
+
+
+<!--Footer-->
+<div class="footer">
+    <h2>Footer</h2>
+</div>
+
+
+</body>
+
+</html>

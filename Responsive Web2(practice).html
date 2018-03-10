@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>title</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+       
+       *{
+           margin:0;
+           padding:0;
+           box-sizing: border-box;
+           font-family:Arial;
+       }
+       
+       .header{
+           text-align: center;
+           
+           background-color:#1abc9c;
+           height:230px;
+           color:white;
+           line-height:220px;
+       }
+       
+       .header>h1,p{
+           height:50px;
+       }
+       
+       .Link_container{
+           display:flex;
+           background-color:black;
+       }
+       
+       .Link_container>div{
+           padding:15px 20px;
+       }
+       
+       .Link_container>div>a{
+           text-decoration: none;
+           color:white;
+       }
+       
+       .Link_container>div:hover{
+           background-color:gray;
+           color:black;
+       }
+       
+       
+       .main_container{
+            display:flex;
+           
+       }
+       
+       .footer{
+           text-align: center;
+           background-color:lightgray;
+           font-size:25px;
+           padding:40px 0px;
+       }
+       
+       .image{
+           margin-top:10px;
+       }
+       
+       .image1{
+           background-color:darkgray;
+           width:360px;
+           height:200px;
+           
+       }
+       
+       .image2{
+           background-color:darkgray;
+           width:360px;
+           height:60px;
+           
+       }
+       
+       .image3{
+           background-color:darkgray;
+           width:100%;
+           height:200px;
+       }
+       
+       .main1,.main2{
+           padding:40px 20px;
+       }
+       
+       .main1{
+           background-color:#f1f1f1;
+       }
+       
+       .main1>div>p, .main2>div>p{
+           padding:20px 0px;
+       }
+
+  
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>My Website</h1>
+    <p>With a <strong>flexible</strong> layout.</p>
+</div>
+
+
+<div class="Link_container">
+    <div><a href="#">Link</a></div>
+    <div><a href="#">Link</a></div>
+    <div><a href="#">Link</a></div>
+    <div><a href="#">Link</a></div>
+</div>
+
+<div class="main_container">
+   
+   
+    <div class="main1">
+    
+        <div>
+            <h2>About Me</h2>
+            <p style="font-size:13px"><strong>Photo of me:</strong></p>
+            <div class="image image1">Image</div>
+            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+        </div>
+    
+        <div style="margin-top:20px">
+            <h3>More Text</h3>
+            <p>Lorem ipsum dolor sit ame.</p>
+            <div class="image image2">Image</div>
+            <div class="image image2">Image</div>
+            <div class="image image2">Image</div>
+        </div>
+   
+    </div>
+
+   
+    <div class="main2">
+    
+    
+        <div>
+            <h2>TITLE HEADING</h2>
+            <p style="font-size:13px"><strong>Title description, Dec 7, 2017</strong></p>
+            <div class="image image3">Image</div>
+
+            <p>Some text..<br><br>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+
+        <div style="margin-top:90px; margin-bottom:30px">
+            <h2>TITLE HEADING</h2>
+            <p style="font-size:13px"><strong>Title description, Sep 2, 2017</strong></p>
+            <div class="image3">Image</div>
+
+            <p>Some text..<br><br>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </div>
+    
+    
+    </div>
+    
+    
+    
+</div>
+
+    <div class="footer">
+        <strong>Footer</strong>
+    </div>
+
+
+
+</body>
+
+</html>

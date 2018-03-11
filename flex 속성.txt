@@ -1,126 +1,121 @@
-flex ¼Ó¼º
+flex ì†ì„±
 
 
 
-*ºÎ¸ð¿¡ ÁÖ´Â ¿ä¼Òµé
+*ë¶€ëª¨ì— ì£¼ëŠ” ìš”ì†Œë“¤
 
 display
-:ÇØ´ç ºÎ¸ð ÅÂ±×¿¡ display:flex¸¦ Áà¼­ ÇÃ·¢½º ·¹ÀÌ¾Æ¿ôÀ» ¸¸µé¼ö ÀÖ´Ù
+:í•´ë‹¹ ë¶€ëª¨ íƒœê·¸ì— display:flexë¥¼ ì¤˜ì„œ í”Œëž™ìŠ¤ ë ˆì´ì•„ì›ƒì„ ë§Œë“¤ìˆ˜ ìžˆë‹¤
 
 
 flex-direction
-:ÇÃ·¢½ºµéÀÇ ¹æÇâÀ» °áÁ¤ÇÒ ¼ö ÀÖ´Ù(row,columnµîµî)
+:í”Œëž™ìŠ¤ë“¤ì˜ ë°©í–¥ì„ ê²°ì •í•  ìˆ˜ ìžˆë‹¤(row,columnë“±ë“±)
 
 
 flex-wrap
-:ÇÃ·¢½º°¡ ÄÁÅ×ÀÌ³Ê ³Êºñ³ª ³ôÀÌ¿¡ ²Ë Ã¤¿ï°ÍÀÎÁö ¾Æ´Ï¸é ³Ñ´Â°Ç ¹ØÁÙ·Î ³»¸±°ÍÀÎÁö °áÁ¤
-nowrap: ¸ðµç ¿ä¼ÒµéÀ» ÇÑ ÁÙ¿¡ Á¤·ÄÇÕ´Ï´Ù.
-wrap: ¿ä¼ÒµéÀ» ¿©·¯ ÁÙ¿¡ °ÉÃÄ Á¤·ÄÇÕ´Ï´Ù.
-wrap-reverse: ¿ä¼ÒµéÀ» ¿©·¯ ÁÙ¿¡ °ÉÃÄ ¹Ý´ë·Î Á¤·ÄÇÕ´Ï´Ù.
+:í”Œëž™ìŠ¤ê°€ ì»¨í…Œì´ë„ˆ ë„ˆë¹„ë‚˜ ë†’ì´ì— ê½‰ ì±„ìš¸ê²ƒì¸ì§€ ì•„ë‹ˆë©´ ë„˜ëŠ”ê±´ ë°‘ì¤„ë¡œ ë‚´ë¦´ê²ƒì¸ì§€ ê²°ì •
+nowrap: ëª¨ë“  ìš”ì†Œë“¤ì„ í•œ ì¤„ì— ì •ë ¬í•©ë‹ˆë‹¤.
+wrap: ìš”ì†Œë“¤ì„ ì—¬ëŸ¬ ì¤„ì— ê±¸ì³ ì •ë ¬í•©ë‹ˆë‹¤.
+wrap-reverse: ìš”ì†Œë“¤ì„ ì—¬ëŸ¬ ì¤„ì— ê±¸ì³ ë°˜ëŒ€ë¡œ ì •ë ¬í•©ë‹ˆë‹¤.
 
 
 flex-flow
-:flex-direction°ú flex-wrapÀ» ÇÕÄ£ Ãà¾àÇü Ç¥ÇöÀÌ´Ù
+:flex-directionê³¼ flex-wrapì„ í•©ì¹œ ì¶•ì•½í˜• í‘œí˜„ì´ë‹¤
 
 
 justify-content
-:ÇÃ·¢½º°¡ Àû¿ëµÈ ÅÂ±×µéÀ» °¡·Î·Î Á¤·ÄÇÒ¼ö ÀÖÀ½
-:justify-content¼Ó¼ºÀº flex-directionÀÌ rowÀÏ¶§ »ç¿ë°¡´É
+:í”Œëž™ìŠ¤ê°€ ì ìš©ëœ íƒœê·¸ë“¤ì„ ê°€ë¡œë¡œ ì •ë ¬í• ìˆ˜ ìžˆìŒ
+:justify-contentì†ì„±ì€ flex-directionì´ rowì¼ë•Œ ì‚¬ìš©ê°€ëŠ¥
 
 
 align-items
-:ÇÃ·¢½º°¡ Àû¿ëµÈ ÅÂ±×µéÀ» ¼¼·Î·Î Á¤·ÄÇÒ¼ö ÀÖÀ½
-:align-items¼Ó¼ºÀº flex-directionÀÌ columnÀÏ¶§ »ç¿ë°¡´É
-align-items: stretch;´Â ÇØ´ç ºÎ¸ð ÄÁÅ×ÀÌ³Ê ³¡±îÁö ÅÂ±×¸¦ Ã¤¿ò(±âº»°ª)
+:í”Œëž™ìŠ¤ê°€ ì ìš©ëœ íƒœê·¸ë“¤ì„ ì„¸ë¡œë¡œ ì •ë ¬í• ìˆ˜ ìžˆìŒ
+:align-itemsì†ì„±ì€ flex-directionì´ columnì¼ë•Œ ì‚¬ìš©ê°€ëŠ¥
+align-items: stretch;ëŠ” í•´ë‹¹ ë¶€ëª¨ ì»¨í…Œì´ë„ˆ ëê¹Œì§€ íƒœê·¸ë¥¼ ì±„ì›€(ê¸°ë³¸ê°’)
 
 
-¡Ø¸¸¾à flex-directionÀÌ columnÀÌ¸é justify-contentÀÇ ¹æÇâÀÌ ¼¼·Î Á¤·Ä·Î,
-align-itemsÀÇ ¹æÇâÀÌ °¡·Î Á¤·Ä·Î ¹Ù²ï´Ù
+â€»ë§Œì•½ flex-directionì´ columnì´ë©´ justify-contentì˜ ë°©í–¥ì´ ì„¸ë¡œ ì •ë ¬ë¡œ,
+align-itemsì˜ ë°©í–¥ì´ ê°€ë¡œ ì •ë ¬ë¡œ ë°”ë€ë‹¤
 
 
 
-flex-start: ¿©·¯ ÁÙµéÀ» ÄÁÅ×ÀÌ³ÊÀÇ ²À´ë±â¿¡ Á¤·ÄÇÕ´Ï´Ù.
-flex-end: ¿©·¯ ÁÙµéÀ» ÄÁÅ×ÀÌ³ÊÀÇ ¹Ù´Ú¿¡ Á¤·ÄÇÕ´Ï´Ù.
-center: ¿©·¯ ÁÙµéÀ» ¼¼·Î¼± »óÀÇ °¡¿îµ¥¿¡ Á¤·ÄÇÕ´Ï´Ù.
-space-between: ¿©·¯ ÁÙµé »çÀÌ¿¡ µ¿ÀÏÇÑ °£°ÝÀ» µÓ´Ï´Ù.
-space-around: ¿©·¯ ÁÙµé ÁÖÀ§¿¡ µ¿ÀÏÇÑ °£°ÝÀ» µÓ´Ï´Ù.
-stretch: ¿©·¯ ÁÙµéÀ» ÄÁÅ×ÀÌ³Ê¿¡ ¸Âµµ·Ï ´Ã¸³´Ï´Ù.
+flex-start: ì—¬ëŸ¬ ì¤„ë“¤ì„ ì»¨í…Œì´ë„ˆì˜ ê¼­ëŒ€ê¸°ì— ì •ë ¬í•©ë‹ˆë‹¤.
+flex-end: ì—¬ëŸ¬ ì¤„ë“¤ì„ ì»¨í…Œì´ë„ˆì˜ ë°”ë‹¥ì— ì •ë ¬í•©ë‹ˆë‹¤.
+center: ì—¬ëŸ¬ ì¤„ë“¤ì„ ì„¸ë¡œì„  ìƒì˜ ê°€ìš´ë°ì— ì •ë ¬í•©ë‹ˆë‹¤.
+space-between: ì—¬ëŸ¬ ì¤„ë“¤ ì‚¬ì´ì— ë™ì¼í•œ ê°„ê²©ì„ ë‘¡ë‹ˆë‹¤.
+space-around: ì—¬ëŸ¬ ì¤„ë“¤ ì£¼ìœ„ì— ë™ì¼í•œ ê°„ê²©ì„ ë‘¡ë‹ˆë‹¤.
+stretch: ì—¬ëŸ¬ ì¤„ë“¤ì„ ì»¨í…Œì´ë„ˆì— ë§žë„ë¡ ëŠ˜ë¦½ë‹ˆë‹¤.
 
 
 
 align-content
-:ÅÂ±×¿Í ÅÂ±×»çÀÌ¿¡ °ø¹éÀ» ÄÁÆ®·ÑÇÔ
+:íƒœê·¸ì™€ íƒœê·¸ì‚¬ì´ì— ê³µë°±ì„ ì»¨íŠ¸ë¡¤í•¨
 
-ÀÌ ¼Ó¼ºÀ» »ç¿ëÇÏ´Â ¹æ¹ýÀÌ ¾î·Á¿ï ¼ö ÀÖ½À´Ï´Ù. 
-align-content´Â ¿©·¯ ÁÙµé »çÀÌÀÇ °£°ÝÀ» ÁöÁ¤ÇÏ¸ç, 
-align-items´Â ÄÁÅ×ÀÌ³Ê ¾È¿¡¼­ ¸ðµç ¿ä¼ÒµéÀÌ ¾î¶»°Ô Á¤·ÄÇÏ´ÂÁö¸¦ ÁöÁ¤ÇÕ´Ï´Ù. 
-ÇÑ ÁÙ¸¸ ÀÖ´Â °æ¿ì, align-content´Â È¿°ú¸¦ º¸ÀÌÁö ¾Ê½À´Ï´Ù.
-
-
+align-contentëŠ” íƒœê·¸ì™€ íƒœê·¸ì‚¬ì´ì— ê³µë°±ì„ ì¡°ì ˆí• ìˆ˜ ìžˆê³ 
+align-itemsëŠ” íƒœê·¸ì™€ íƒœê·¸ì‚¬ì´ì˜ ê³µë°±ì€ ê·¸ëŒ€ë¡œ ìœ ì§€í•œì±„ í”Œëž™ìŠ¤ê°€ ì ìš©ëœ ì „ì²´ íƒœê·¸ìžì²´ë¥¼ ì´ë™ì‹œí‚¨ë‹¤ 
+í•œ ì¤„ë§Œ ìžˆëŠ” ê²½ìš°, align-contentëŠ” íš¨ê³¼ë¥¼ ë³´ì´ì§€ ì•ŠìŠµë‹ˆë‹¤.
+ì¦‰ í”Œëž™ìŠ¤ê°€ ì ìš©ëœ íƒœê·¸ì™€ íƒœê·¸ì‚¬ì´ì˜ ê³µë°±ì„ ì—†ì• ê³  íƒœê·¸ë“¤ì„ ì´ë™ì‹œí‚¤ë ¤ë©´ align-contentë¥¼ ì¨ì•¼ í•œë‹¤
 
 
 
 
-
-*ÀÚ½Ä¿¡°Ô ÁÖ´Â ¿ä¼Òµé
+*ìžì‹ì—ê²Œ ì£¼ëŠ” ìš”ì†Œë“¤
 
 
 order
-:ÅÂ±× ¿©·¯°³ÀÇ ¼ø¼­¸¦ ÁöÁ¤ÇØ¼­ ÁöÁ¤ÇÑ ¼ø¼­´ë·Î Á¤·ÄÇÒ¼ö ÀÖ´Ù
-±âº»°ªÀº 0ÀÌ¸ç ´Ù¸¥ ÅÂ±×µéÀÌ ±âº»ÀûÀ¸·Î 0À» °¡Áø »óÅÂ¿¡¼­ 
-Æ¯Á¤ ÅÂ±×¿¡ -1À» ÁÖ¸é ¸Ç ¾ÕÀ¸·Î ¿À°í 1À» ÁÖ¸é ¸Ç µÚ·Î °¡°ÔµÈ´Ù
+:íƒœê·¸ ì—¬ëŸ¬ê°œì˜ ìˆœì„œë¥¼ ì§€ì •í•´ì„œ ì§€ì •í•œ ìˆœì„œëŒ€ë¡œ ì •ë ¬í• ìˆ˜ ìžˆë‹¤
+ê¸°ë³¸ê°’ì€ 0ì´ë©° ë‹¤ë¥¸ íƒœê·¸ë“¤ì´ ê¸°ë³¸ì ìœ¼ë¡œ 0ì„ ê°€ì§„ ìƒíƒœì—ì„œ 
+íŠ¹ì • íƒœê·¸ì— -1ì„ ì£¼ë©´ ë§¨ ì•žìœ¼ë¡œ ì˜¤ê³  1ì„ ì£¼ë©´ ë§¨ ë’¤ë¡œ ê°€ê²Œëœë‹¤
 
 
 
 flex-grow
-:flew-grow:0Àº ¿©¹éÀ» °®Áö ¾Ê°Ú´Ù´Â ÀÇ¹ÌÀÌ°í
+:flew-grow:0ì€ ì—¬ë°±ì„ ê°–ì§€ ì•Šê² ë‹¤ëŠ” ì˜ë¯¸ì´ê³ 
 
-1ÀÏ¶§´Â °¢°¢ÀÇ ÅÂ±×°¡ 1:1:1:1:1·Î ³ª´²°¡Áø´Ù°í »ý°¢ÇÏ¸é µÊ
+1ì¼ë•ŒëŠ” ê°ê°ì˜ íƒœê·¸ê°€ 1:1:1:1:1ë¡œ ë‚˜ëˆ ê°€ì§„ë‹¤ê³  ìƒê°í•˜ë©´ ë¨
 
-flex-grow°¡ 1ÀÏ¶§¿Í 2ÀÏ¶§°¡ Â÷ÀÌ°¡ ¾ø´Â ÀÌÀ¯´Â
-1:1:1:1:1ÀÌ³ª 2:2:2:2:2³ª °°±â¶§¹®¿¡
+flex-growê°€ 1ì¼ë•Œì™€ 2ì¼ë•Œê°€ ì°¨ì´ê°€ ì—†ëŠ” ì´ìœ ëŠ”
+1:1:1:1:1ì´ë‚˜ 2:2:2:2:2ë‚˜ ê°™ê¸°ë•Œë¬¸ì—
 
-¶Ç Æ¯Á¤ ÅÂ±×¸¸ flex-grow:2¸¦ °¡Áö°í ´Ù¸¥ 4°³ÀÇ ÅÂ±×µéÀº 1À» °¡Áø´Ù°í Ä¡¸é
-1:2:1:1:1ÀÌ±â¶§¹®¿¡ µÎ¹øÂ° ÅÂ±×¸¸ 2¹èÀÇ ºñÀ²ÀÇ Å©±â¸¦ °¡Áö°Ô µÈ´Ù
+ë˜ íŠ¹ì • íƒœê·¸ë§Œ flex-grow:2ë¥¼ ê°€ì§€ê³  ë‹¤ë¥¸ 4ê°œì˜ íƒœê·¸ë“¤ì€ 1ì„ ê°€ì§„ë‹¤ê³  ì¹˜ë©´
+1:2:1:1:1ì´ê¸°ë•Œë¬¸ì— ë‘ë²ˆì§¸ íƒœê·¸ë§Œ 2ë°°ì˜ ë¹„ìœ¨ì˜ í¬ê¸°ë¥¼ ê°€ì§€ê²Œ ëœë‹¤
 
 
 
 flex-shrink
-:flex-shrink¸¦ ÁÖ·Á¸é ÇØ´ç ÅÂ±×´Â flex-basis °ªÀ» °¡Áö°í ÀÖ¾î¾ß ÇÑ´Ù(²ÀÀº ¾Æ´Ô)
-(flex-grow¸¦ °¡Áö°í ÀÖ´Â°Ç ¾ÈµÊ)
+:flex-shrinkë¥¼ ì£¼ë ¤ë©´ í•´ë‹¹ íƒœê·¸ëŠ” flex-basis ê°’ì„ ê°€ì§€ê³  ìžˆì–´ì•¼ í•œë‹¤(ê¼­ì€ ì•„ë‹˜)
+(flex-growë¥¼ ê°€ì§€ê³  ìžˆëŠ”ê±´ ì•ˆë¨)
 
-flex-basis¿¡ px Å©±â¸¦ ÁÖ°í flex-shrink°ª¿¡ 0À» ÁÖ¸é ÇØ´ç ÇÃ·¢½º°¡ ÁÙ¾îµé¸é¼­
-ÇÃ·¢½ºµµ °°ÀÌ ÁÙ¾îµéÁö ¾Ê°í °íÁ¤µÈ´Ù
+flex-basisì— px í¬ê¸°ë¥¼ ì£¼ê³  flex-shrinkê°’ì— 0ì„ ì£¼ë©´ í•´ë‹¹ í”Œëž™ìŠ¤ê°€ ì¤„ì–´ë“¤ë©´ì„œ
+í”Œëž™ìŠ¤ë„ ê°™ì´ ì¤„ì–´ë“¤ì§€ ì•Šê³  ê³ ì •ëœë‹¤
 
-flex-shrinkÀÇ ±âº»°ªÀº 1·Î¼­ 1·Î ¼³Á¤ÇÏ¸é ¹ÝÀÀÇü À¥Ã³·³ È­¸é ½ºÅ©·ÑÀ» ÁÙÀÌ¸é
-ÇØ´ç ÇÃ·¢½ºµµ °°ÀÌ ÁÙ¾îµç´Ù
+flex-shrinkì˜ ê¸°ë³¸ê°’ì€ 1ë¡œì„œ 1ë¡œ ì„¤ì •í•˜ë©´ ë°˜ì‘í˜• ì›¹ì²˜ëŸ¼ í™”ë©´ ìŠ¤í¬ë¡¤ì„ ì¤„ì´ë©´
+í•´ë‹¹ í”Œëž™ìŠ¤ë„ ê°™ì´ ì¤„ì–´ë“ ë‹¤
 
 
-¸¸¾à µÎ°³ÀÇ ÅÂ±×¿¡ flex-basis·Î Å©±â¸¦ ÁÖ°í flex-shrink°ªÀ» ÇÏ³ª´Â 1·Î
-¶Ç ÇÏ³ª´Â 2·Î ÁÖ¸é µÎ°³ÀÇ ÅÂ±×°¡ È­¸éÀÌ ÁÙ¾îµé¸é 1/3, 2/3(1:2)¸¸Å­ÀÇ ºñÀ²·Î °°ÀÌ ÁÙ¾îµç´Ù
+ë§Œì•½ ë‘ê°œì˜ íƒœê·¸ì— flex-basisë¡œ í¬ê¸°ë¥¼ ì£¼ê³  flex-shrinkê°’ì„ í•˜ë‚˜ëŠ” 1ë¡œ
+ë˜ í•˜ë‚˜ëŠ” 2ë¡œ ì£¼ë©´ ë‘ê°œì˜ íƒœê·¸ê°€ í™”ë©´ì´ ì¤„ì–´ë“¤ë©´ 1/3, 2/3(1:2)ë§Œí¼ì˜ ë¹„ìœ¨ë¡œ ê°™ì´ ì¤„ì–´ë“ ë‹¤
 
 flex-basis
-:ÇØ´ç ÅÂ±×ÀÇ ³Êºñ/³ôÀÌ¸¦ ÁöÁ¤ÇÒ¼ö ÀÖ´Ù(px·Î ÁöÁ¤°¡´É)
-ÇÃ·¢½º°¡ °¡·Î Á¤·ÄÀÌ¸é ³Êºñ·Î ¼¼·Î Á¤·ÄÀÌ¸é ³ôÀÌ·Î ÁöÁ¤µÈ´Ù
+:í•´ë‹¹ íƒœê·¸ì˜ ë„ˆë¹„/ë†’ì´ë¥¼ ì§€ì •í• ìˆ˜ ìžˆë‹¤(pxë¡œ ì§€ì •ê°€ëŠ¥)
+í”Œëž™ìŠ¤ê°€ ê°€ë¡œ ì •ë ¬ì´ë©´ ë„ˆë¹„ë¡œ ì„¸ë¡œ ì •ë ¬ì´ë©´ ë†’ì´ë¡œ ì§€ì •ëœë‹¤
 
 
 
 flex
-: flex-grow, flex-shrink, flex-basisÀÇ Ãà¾àÇüÀ¸·Î¼­ %¸¦ Áà¼­ ÇØ´ç ÇÃ·¢½º°¡ ÀüÃ¼ ³ÊºñÀÇ ¸îÆÛ¼¾Æ®¸¦ Â÷ÁöÇÒ°ÍÀÎÁö Á¤ÇÒ¼ö ÀÖÀ½
-ex)A¶ó´Â ÅÂ±×¿¡ flex:30%¸¦ ÁÖ°í B¶ó´Â ÅÂ±×¿¡ flex:70%¸¦ ÁÖ¸é A´Â ÀüÃ¼ ³ÊºñÀÇ 30%¸¦ B´Â ÀüÃ¼ ³ÊºñÀÇ 70%¸¦ Â÷ÁöÇÏ°Ô µÈ´Ù
-Tip:ºÎ¸ð ÅÂ±×¿¡ flex-wrap:wrap¸¦ Áà¼­ A¶ó´Â ÅÂ±×°¡ È­¸éÀ» ¾ó¸¶³ª Â÷ÁöÇÏ´ÂÁö ´ëÃæ È®ÀÎÈÄ %¸¦ ÁÙ ¼ö ÀÖ´Ù
+: flex-grow, flex-shrink, flex-basisì˜ ì¶•ì•½í˜•ìœ¼ë¡œì„œ %ë¥¼ ì¤˜ì„œ í•´ë‹¹ í”Œëž™ìŠ¤ê°€ ì „ì²´ ë„ˆë¹„ì˜ ëª‡í¼ì„¼íŠ¸ë¥¼ ì°¨ì§€í• ê²ƒì¸ì§€ ì •í• ìˆ˜ ìžˆìŒ
+ex)Aë¼ëŠ” íƒœê·¸ì— flex:30%ë¥¼ ì£¼ê³  Bë¼ëŠ” íƒœê·¸ì— flex:70%ë¥¼ ì£¼ë©´ AëŠ” ì „ì²´ ë„ˆë¹„ì˜ 30%ë¥¼ BëŠ” ì „ì²´ ë„ˆë¹„ì˜ 70%ë¥¼ ì°¨ì§€í•˜ê²Œ ëœë‹¤
+Tip:ë¶€ëª¨ íƒœê·¸ì— flex-wrap:wrapë¥¼ ì¤˜ì„œ Aë¼ëŠ” íƒœê·¸ê°€ í™”ë©´ì„ ì–¼ë§ˆë‚˜ ì°¨ì§€í•˜ëŠ”ì§€ ëŒ€ì¶© í™•ì¸í›„ %ë¥¼ ì¤„ ìˆ˜ ìžˆë‹¤
 
 
 align-self
-:À§¿¡ justify-content¿Í align-items°¡ ÇÃ·¢½º°¡ Àû¿ëµÈ ÀüÃ¼ ÅÂ±×¿¡ ¿µÇâÀ» ÁÖ´Â ¼Ó¼ºÀÌ¶ó¸é
-align-self´Â ÇÃ·¢½º°¡ Àû¿ëµÈ ÅÂ±×µéÁß Æ¯Á¤ ÅÂ±× ¸î¸î¿¡°Ô¸¸ °³º° Àû¿ëÇÒ¼ö ÀÖ´Â ¼Ó¼ºÀÌ´Ù
+:ìœ„ì— justify-contentì™€ align-itemsê°€ í”Œëž™ìŠ¤ê°€ ì ìš©ëœ ì „ì²´ íƒœê·¸ì— ì˜í–¥ì„ ì£¼ëŠ” ì†ì„±ì´ë¼ë©´
+align-selfëŠ” í”Œëž™ìŠ¤ê°€ ì ìš©ëœ íƒœê·¸ë“¤ì¤‘ íŠ¹ì • íƒœê·¸ ëª‡ëª‡ì—ê²Œë§Œ ê°œë³„ ì ìš©í• ìˆ˜ ìžˆëŠ” ì†ì„±ì´ë‹¤
 
-°¡Àå À§¿¡ ÀÖ´Â ºÎ¸ð ÄÁÅ×ÀÌ³Ê¸¦ ±âÁØÀ¸·Î 
-center¸é °¡¿îµ¥, 
-flex-start´Â Ã¹ºÎºÐ,
-flex-end´Â ³¡ºÎºÐ
-
-
+ê°€ìž¥ ìœ„ì— ìžˆëŠ” ë¶€ëª¨ ì»¨í…Œì´ë„ˆë¥¼ ê¸°ì¤€ìœ¼ë¡œ 
+centerë©´ ê°€ìš´ë°, 
+flex-startëŠ” ì²«ë¶€ë¶„,
+flex-endëŠ” ëë¶€ë¶„
 
 
 
@@ -128,9 +123,9 @@ flex-end´Â ³¡ºÎºÐ
 
 
 
+í”Œëž™ìŠ¤ ì•„ì´í…œ(íƒœê·¸)ë¥¼ ì™„ë²½í•˜ê²Œ ê°€ìš´ë° ë†“ëŠ” ë°©ë²•
+justify-content: center; ->ê°€ë¡œì˜ ê°€ìš´ë° ì •ë ¬
+align-items: center; ->ì„¸ë¡œì˜ ê°€ìš´ë° ì •ë ¬
 
-ÇÃ·¢½º ¾ÆÀÌÅÛ(ÅÂ±×)¸¦ ¿Ïº®ÇÏ°Ô °¡¿îµ¥ ³õ´Â ¹æ¹ý
-justify-content: center; ->°¡·ÎÀÇ °¡¿îµ¥ Á¤·Ä
-align-items: center; ->¼¼·ÎÀÇ °¡¿îµ¥ Á¤·Ä
+ë‘ê°œì˜ ì†ì„±ì— centerë¥¼ ì¤€ë‹¤
 
-µÎ°³ÀÇ ¼Ó¼º¿¡ center¸¦ ÁØ´Ù

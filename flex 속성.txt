@@ -53,7 +53,7 @@ align-content
 
 align-content는 태그와 태그사이에 공백을 조절할수 있고
 align-items는 태그와 태그사이의 공백은 그대로 유지한채 플랙스가 적용된 전체 태그자체를 이동시킨다 
-한 줄만 있는 경우, align-content는 효과를 보이지 않습니다.
+한 줄만 있는 경우, align-content는 효과를 보이지 않
 즉 플랙스가 적용된 태그와 태그사이의 공백을 없애고 태그들을 이동시키려면 align-content를 써야 한다
 
 

@@ -14,6 +14,9 @@ flex-direction
 
 flex-wrap
 :플랙스가 컨테이너 너비나 높이에 꽉 채울것인지 아니면 넘는건 밑줄로 내릴것인지 결정
+nowrap: 모든 요소들을 한 줄에 정렬합니다.
+wrap: 요소들을 여러 줄에 걸쳐 정렬합니다.
+wrap-reverse: 요소들을 여러 줄에 걸쳐 반대로 정렬합니다.
 
 
 flex-flow
@@ -21,18 +24,37 @@ flex-flow
 
 
 justify-content
-:해당 태그들을 가로로 정렬할수 있음
+:플랙스가 적용된 태그들을 가로로 정렬할수 있음
 :justify-content속성은 flex-direction이 row일때 사용가능
 
 
 align-items
-:해당 태그들을 세로로 정렬할수 있음
+:플랙스가 적용된 태그들을 세로로 정렬할수 있음
 :align-items속성은 flex-direction이 column일때 사용가능
 align-items: stretch;는 해당 부모 컨테이너 끝까지 태그를 채움(기본값)
 
 
+※만약 flex-direction이 column이면 justify-content의 방향이 세로 정렬로,
+align-items의 방향이 가로 정렬로 바뀐다
+
+
+
+flex-start: 여러 줄들을 컨테이너의 꼭대기에 정렬합니다.
+flex-end: 여러 줄들을 컨테이너의 바닥에 정렬합니다.
+center: 여러 줄들을 세로선 상의 가운데에 정렬합니다.
+space-between: 여러 줄들 사이에 동일한 간격을 둡니다.
+space-around: 여러 줄들 주위에 동일한 간격을 둡니다.
+stretch: 여러 줄들을 컨테이너에 맞도록 늘립니다.
+
+
+
 align-content
 :태그와 태그사이에 공백을 컨트롤함
+
+이 속성을 사용하는 방법이 어려울 수 있습니다. 
+align-content는 여러 줄들 사이의 간격을 지정하며, 
+align-items는 컨테이너 안에서 모든 요소들이 어떻게 정렬하는지를 지정합니다. 
+한 줄만 있는 경우, align-content는 효과를 보이지 않습니다.
 
 
 
@@ -45,6 +67,8 @@ align-content
 
 order
 :태그 여러개의 순서를 지정해서 지정한 순서대로 정렬할수 있다
+기본값은 0이며 다른 태그들이 기본적으로 0을 가진 상태에서 
+특정 태그에 -1을 주면 맨 앞으로 오고 1을 주면 맨 뒤로 가게된다
 
 
 
@@ -88,6 +112,9 @@ Tip:부모 태그에 flex-wrap:wrap를 줘서 A라는 태그가 화면을 얼마나 차지하는지 대충
 
 
 align-self
+:위에 justify-content와 align-items가 플랙스가 적용된 전체 태그에 영향을 주는 속성이라면
+align-self는 플랙스가 적용된 태그들중 특정 태그 몇몇에게만 개별 적용할수 있는 속성이다
+
 가장 위에 있는 부모 컨테이너를 기준으로 
 center면 가운데, 
 flex-start는 첫부분,

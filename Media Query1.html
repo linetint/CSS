@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>title</title>
+<!--    모바일에서도 화면에 반응형 웹을 적용시킴-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        
+        
+/*        501~600px까지는 그린*/
+        @media(max-width:600px){
+            body{
+                background-color:yellow;
+            }
+        }
+        
+/*        0~500px까지는 레드*/
+        @media(max-width:500px){
+            body{
+                background-color:red;
+            }
+        }
+        
+        
+/*   max-width:500px을 먼저 쓰게 되면 max-width:600px일때 500일때 배경색과 600일때 배경색이 중복적용 되기때문에 적용이 제대로 되지 않음
+     CSS 캐스케이딩(우선순위)때문에 max-width:600px을 먼저 써줘야 제대로 적용이 됨 */
+        
+        
+/*        601px~은 블루*/
+        @media(min-width:601px){
+            body{
+                background-color:blue;
+            }
+        }
+    
+    
+    
+    </style>
+
+</head>
+
+<body>
+
+
+    
+    
+
+
+
+</body>
+
+</html>

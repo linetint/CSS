@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive Web4</title>
+
+    <style>
+        
+        *{
+            box-sizing:border-box;
+        }
+        
+        body{
+            margin:0;
+            background-color:#66cc92;
+            font-family:Arial;
+        }
+        
+        p{
+            font-size:12px;
+        }
+        
+        .header{
+            text-align: center;
+            color:white;
+        }
+        
+        .header a{
+            text-decoration: none;
+            color:white;
+        }
+        
+        .container{
+            display:flex;
+            justify-content:space-between;
+        }
+        
+        .container>div div{
+            background-color:white;
+            margin:10px;
+        }
+        
+        .container .left{
+            flex:50%;
+
+        }
+        
+        .container .left2{
+            display:flex;
+            background-color:#66cc92;
+        }
+        
+        .container .right{
+            flex:50%;
+            display:flex;
+            flex-direction: column;
+        }
+        
+        .container .left_right{
+            background-color:#66cc92;
+        }
+        
+        img{
+            width:100%;
+        }
+        
+        .left_left{
+            flex:50%;
+        }
+        
+        .left_right{
+            flex:50%;
+        }
+
+        
+        
+    
+    </style>
+
+</head>
+
+<body>
+    
+<!--header-->
+<div class="header">
+    <h1>The Envato Tuts+Report</h1>
+    <p><a href="#">Read tutorial</a></p>
+</div>    
+    
+    
+<!--main    -->
+<div class="container">
+    
+    <div class="left">
+        
+            <div>
+                <img src="image-01-lo.jpg" alt="image1">
+                <h4 style="margin-left:10px;">Hello World</h4>
+                <p style="margin-left:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <br><br>By JoeSmith-42comments</p>
+            </div>
+        
+        <div class="left2"> 
+            
+            <div class="left_left">
+                <div>
+                    <img src="image-02-lo.jpg" alt="image2">
+                    <h4>Hello World</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>By JoeSmith-42comments</p>
+                </div>
+            </div>
+
+            <div class="left_right">
+                <div style="padding:20px">
+                    <img src="image-03-lo.jpg" alt="image3">
+                    <h4>Hello World</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <p>By JoeSmith-42comments</p>
+                </div>
+                <div style="padding:20px">
+                    <h4>Hello World</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <p>By JoeSmith-42comments</p>
+                </div>
+                <div style="padding:20px">    
+                    <h4>Hello World</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <br>
+                    <p>By JoeSmith-42comments</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>    
+    
+    
+    <div class="right">
+        <div>
+            <img src="image-04-lo.jpg" alt="image4">
+            <h4 style="margin-left:10px;">Hello World</h4>
+            <p style="margin-left:10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <br><br><br>By JoeSmith-42comments</p>
+        </div>
+        <div style="padding:10px; flex-grow:1;">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <br><br><br>
+            <p>By JoeSmith-42comments</p>
+        </div>
+        <div style="padding:10px; flex-grow:1;">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <br><br><br>
+            <p>By JoeSmith-42comments</p>
+        </div>
+        <div style="padding:10px; flex-grow:1;">
+            <h4>Hello World</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <br><br><br>
+            <p>By JoeSmith-42comments</p>
+        </div>
+    </div>
+    
+    
+    
+</div>    
+    
+        
+    
+</body>
+
+</html>

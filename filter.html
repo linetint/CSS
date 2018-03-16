@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>CSS filter</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+       
+       
+/*       이미지뿐만 아니라 이렇게 텍스트에도 filter효과를 줄수 있다는것이 놀라움*/
+       h1{
+           filter:blur(1px);
+/*           filter:opacity(10%);*/
+/*           filter:invert(0%);*/
+       }
+       
+       
+
+       img{
+           width:250px;
+           height:250px;
+       }
+       
+       
+       .grayscale{
+/*
+           
+           앞에 -webkit-이나 -o-를 준 이유는 최신 신기술이기때문에
+           특정 브라우저에서는 실험적으로 사용하고 있기때문에 앞에 써줌으로써 최신기술을 해당 브라우저에서 적용될수 있게 함
+           (완전히 적용된 브라우저면 그냥 filter만 써도 된다)
+           
+          chrome이나 사파리에서 사용
+           -webkit-filter:grayscale(100%);
+               오페라에서 사용
+           -o-filter:grayscale(100%);
+*/           
+           
+           filter:grayscale(100%);
+/*           filter:grayscale(1);*/
+           
+       }
+       
+       .sepia{
+           filter:sepia(100%);
+       }
+       
+       .saturation{
+           filter:saturate(400%);
+       }
+       
+       .hue-rotate{
+           filter:hue-rotate(270deg);
+       }
+       
+       .invert{
+           filter:invert(100%);
+       }
+       
+       .opacity{
+           filter:opacity(50%);
+       }
+       
+       .brightness{
+           filter:brightness(180%);
+       }
+       
+       .contrast{
+           filter:contrast(250%);
+       }
+       
+       .blur{
+           filter:blur(3px);
+       }
+       
+       .mix1{
+           filter:hue-rotate(90deg) saturate(300%);
+       }
+       
+       .mix2{
+           filter:contrast(300%) brightness(50%);
+       }
+       
+       .mix3{
+           filter:hue-rotate(145deg) saturate(600%) blur(1px) sepia(50%);
+       }
+       
+  
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+    <h1>Spongebob</h1>
+    
+    <img src="images/spongebob.jpg" class="origin" alt="">
+    
+    <img src="images/spongebob.jpg" class="grayscale" alt="">
+    
+    <img src="images/spongebob.jpg" class="sepia" alt="">
+    
+    <img src="images/spongebob.jpg" class="saturation" alt="">
+    
+    <img src="images/spongebob.jpg" class="hue-rotate" alt="">
+    
+    <img src="images/spongebob.jpg" class="invert" alt="">
+    
+    <img src="images/spongebob.jpg" class="opacity" alt="">
+
+    <img src="images/spongebob.jpg" class="brightness" alt="">
+    
+    <img src="images/spongebob.jpg" class="contrast" alt="">
+    
+    <img src="images/spongebob.jpg" class="blur" alt="">
+    
+    <img src="images/spongebob.jpg" class="mix1" alt="">
+    
+    <img src="images/spongebob.jpg" class="mix2" alt="">
+    
+    <img src="images/spongebob.jpg" class="mix3" alt="">
+
+
+
+
+
+</body>
+
+</html>

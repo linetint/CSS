@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>transform</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <style>
+
+       
+       
+      .item{
+           width:100px;
+           height:100px;
+           background-color:lightblue;
+           margin:50px;
+       }
+       
+       h4{
+           padding:20px;
+       }
+       
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+<h1>Css3 Transform</h1>
+<p>WebSite : https://codepen.io/vineethtr/full/XKKEgM/</p>
+<hr>
+
+<h4>rotate</h4>
+<div class="item" style="transform:rotate(45deg)"></div>
+
+<h4>rotateX</h4>
+<div class="item"  style="transform:rotateX(45deg)"></div>
+
+<h4>rotateY</h4>
+<div class="item"  style="transform:rotateY(45deg)"></div>
+
+<h4>rotateZ</h4>
+<div class="item"  style="transform:rotateZ(45deg)"></div>
+
+<h4>scale</h4>
+<div class="item"  style="transform:scale(2)"></div>
+
+<h4>scaleX</h4>
+<div class="item"  style="transform:scaleX(2)"></div>
+
+<h4>scaleY</h4>
+<div class="item"  style="transform:scaleY(2)"></div>
+
+<h4>skew</h4>
+<div class="item"  style="transform:skew(45deg)"></div>
+
+<h4>skewX</h4>
+<div class="item"  style="transform:skewX(45deg)"></div>
+
+<h4>skewY</h4>
+<div class="item"  style="transform:skewY(45deg)"></div>
+
+<h4>translate</h4>
+<div class="item"  style="transform:translate(45px)"></div>
+
+<h4>translateX</h4>
+<div class="item"  style="transform:translateX(45px)"></div>
+
+<h4>translateY</h4>
+<div class="item"  style="transform:translateY(45px)"></div>
+
+<h4>matrix</h4>
+<div class="item"  style="transform:matrix(2,2,0,1,45,0)"></div>
+
+
+
+<!--
+Perspective는 원근감을 결정하는 속성으로서 본인한테 주는게 아닌 본인보다
+위에 있는 부모태그한테 줘야한다
+
+이유는 부모 태그 입장에서 얼마나 떨어져 있는지를 봐야하기때문에
+-->
+<h3>Perspective:100</h3>
+
+<h4>rotateX</h4>
+<div style="perspective:100px;">
+    <div class="item"  style="transform:rotateX(15deg);"></div>
+</div>
+
+<h4>rotateY</h4>
+<div style="perspective:100px;">
+    <div class="item"  style="transform:rotateY(15deg)"></div>
+</div>
+
+<h3>Perspective:200</h3>
+
+<h4>rotateX</h4>
+<div style="perspective:200px;">
+    <div class="item"  style="transform:rotateX(15deg)"></div>
+</div>
+
+<h4>rotateY</h4>
+<div style="perspective:200px;">
+    <div class="item"  style="transform:rotateY(15deg)"></div>
+</div>
+
+<h3>Transform origin</h3>
+
+<!--rotate-->
+<h4>transform-origin:100% 0 0(x축 100%)</h4>
+<div class="item"  style="transform:rotate(45deg); transform-origin: 100% 0 0"></div>
+
+<h4>transform-origin:0 100% 0(y축 100%)</h4>
+<div class="item"  style="transform:rotate(45deg); transform-origin: 0 100% 0"></div>
+
+
+<!--rotateX-->
+<!--3D 효과처럼 적용되는 css속성은 perspective를 줘야 원근법으로 인해서 3D효과처럼 보이게 된다-->
+<h4>transform-origin:100% 0 0(x축 100%)</h4>
+<div style="perspective: 100px;">
+    <div class="item"  style="transform:rotateX(45deg); transform-origin: 100% 0 0"></div>
+</div>
+
+<h4>transform-origin:0 100% 0(y축 100%)</h4>
+<div style="perspective: 100px;">
+    <div class="item"  style="transform:rotateY(45deg); transform-origin: 0 100% 0"></div>
+</div>
+
+
+<!--scale-->
+<h4>transform-origin:100% 0 0(x축 100%)</h4>
+<div class="item"  style="transform:scale(1.5); transform-origin: 100% 0 0"></div>
+
+<h4>transform-origin:0 100% 0(y축 100%)</h4>
+<div class="item"  style="transform:scale(1.5); transform-origin: 0 100% 0"></div>
+
+
+
+
+</body>
+
+</html>

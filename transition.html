@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>title</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+
+       a{
+           font-size:40px;
+           display:inline-block;
+           
+/*
+           transition-property: all;
+           transition-duration:1s;
+*/
+           
+/*           transition:all 1s;*/
+           transition:font-size 1s, transform 0.5s;
+       }
+       
+/*transform이라는 속성은 그 transform을 받는 대상인 태그(엘리먼트)가 블럭 또는 인라인 블럭인 경우에만 동작한다(인라인 엘리먼트에서는 동작하지 않음)*/
+       a:active{
+           transform:translate(50px, 50px);
+           font-size:20px;
+       }
+       
+       div{
+           width:100px;
+           height:100px;
+           background-color:lightpink;
+           margin:100px;
+           line-height:100px;
+           text-align: center;
+           color:white;
+           
+           transition:all 1s;
+       }
+       
+       div:hover{
+/*           transform:scale(2);*/
+           width:400px;
+           height:200px;
+           
+           background-color:yellowgreen;
+       }
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+    <a href="#">Click</a>
+    
+    
+    <div>BOX</div>
+
+
+
+
+
+</body>
+
+</html>

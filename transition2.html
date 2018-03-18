@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>title</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+       
+       body{
+           background-color:black;
+           transition:all 3s;
+       }
+
+       
+        div{
+           width:100px;
+           height:100px;
+           background-color:purple;
+           margin:100px;
+           line-height:100px;
+           text-align: center;
+           color:white;
+           padding:30px;
+           
+            
+/*
+           transition-timing-function: cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+            기본값은 ease   
+           transition:all 1s;
+*/
+            
+/*
+cubic-bezier는 사용자가 transition-timing-function을 직접 만들어서 사용할수 있는 것인데
+https://matthewlein.com/tools/ceaser 사이트에서 해당 cubic-bezier를 쉽게 만들어서 사용할수 있게 편의를 제공하고 있다
+*/
+            /* easeInOutCirc */
+        transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860); 
+       }
+       
+       div:hover{
+           width:400px;
+/*           height:400px;*/
+           
+           background-color:deeppink;
+       }
+           
+  
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body onload="document.querySelector('body').style.backgroundColor='white'">
+
+<div>BOX</div>
+
+
+
+
+
+
+</body>
+
+</html>

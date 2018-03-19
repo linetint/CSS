@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        
+<!--
+강의에서는 이것으로 열어야 된다고 했지만 따로 해봤을때는 밑에
+fontello-embedded.css를 링크로 걸어줘야 이미지가 제대로 열림    
+-->
+<!--<link rel="stylesheet" href="css/fontello.css">    -->
+<link rel="stylesheet" href="css/fontello-embedded.css">
+
+<!--이미지를 유동적이게 움직이게 하고 싶으면 animation.css을 링크해주면 된다-->
+<link rel="stylesheet" href="css/animation.css">  
+
+
+<style>
+    
+    .item:before{
+        content:"s";
+        color:red;
+    }
+    
+    .item:after{
+        content:"x";
+        font-size:30px;
+    }
+           
+        
+</style>
+        
+        
+</head>
+    
+<body>
+
+       <div class="item animate-spin">A</div>
+        
+        <br>
+        
+       <i class="icon-user animate-spin"></i>
+       <i class="icon-users animate-spin"></i>
+       <i class="icon-male animate-spin"></i>
+       <i class="icon-female animate-spin"></i>
+</body>
+    
+</html>

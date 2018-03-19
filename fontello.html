@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        
+<!--
+강의에서는 이것으로 열어야 된다고 했지만 따로 해봤을때는 밑에
+fontello-embedded.css를 링크로 걸어줘야 이미지가 제대로 열림    
+-->
+<!--<link rel="stylesheet" href="css/fontello.css">    -->
+<link rel="stylesheet" href="css/fontello-embedded.css">    
+
+
+<style>
+           
+    div{
+        font-family: "fontello";
+/*        font-size:100px;*/
+        color:red;
+/*        text-align: center;*/
+    }
+        
+</style>
+        
+        
+</head>
+    
+<body>
+
+<h1>fontello</h1>
+
+<p>Website : http://fontello.com/?</p>
+
+<!--
+$#xe801처럼 유니코드 형식으로 가져올때는 위에 font-family를 "fontello"로 지정해줘야하지만 밑에 처럼 <i></i>방식으로 가져올때는 font-family를 지정하지 않아도
+클래스에 해당 아이콘의 이름만 지정해주면 웹사이트에 벡터이미지를 가져올수 있다
+-->
+       <div>&#xe801;</div>
+       <div>&#xe802;</div>
+       <div>&#xe803;</div>
+       <div>&#xe805;</div>
+       <div>&#xe806;</div>
+       <div>&#xf235;</div>
+        
+       <i class="icon-user"></i>
+       <i class="icon-users"></i>
+       <i class="icon-male"></i>
+       <i class="icon-female"></i>
+</body>
+    
+</html>

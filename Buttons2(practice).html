@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+   <title>Buttons2</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="WebSite description">
+   <meta name="keywords" content="HTML,CSS,JavaScript,jQuery">
+   <meta name="author" content="GW">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <!-- Buttons core css -->
+  <link rel="stylesheet" href="buttons.css">
+   
+   
+  <!-- Only needed if you want font icons -->
+  <link rel="stylesheet" href="font-awesome.css">
+  
+  <!-- Only needed if you want font icons -->
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+   
+
+<!-- Only needed if you want support for dropdown menus -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="buttons.js"></script>
+  
+   <style>
+
+  
+           
+       
+       
+   </style>
+
+
+</head>
+
+<body>
+
+<h1>Buttons</h1>
+
+<p>Website : http://unicorn-ui.com/buttons/</p>
+
+<h2>SHAPES & SIZES</h2>
+
+<button type="button" class="button button-square">b1</button>
+<button type="button" class="button button-circle">b2</button>
+<button type="button" class="button button-royal button-giant">b3</button>
+<button class="button button-royal button-square button-giant"><i class="fa fa-plus"></i></button>
+
+
+
+<h2>BORDER & BORDERLESS BUTTONS</h2>
+
+<button type="button" class="button button-plain"><i class="fa fa-reply"></i></button>
+<button type="button" class="button button-plain"><i class="fa fa-star"></i></button>
+<button type="button" class="button button-plain"><i class="fa fa-trash-o"></i></button>
+
+
+
+<h2>3D BUTTONS</h2>
+
+<button class="button button-3d button-box button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+<button type="button" class="button button-3d button-primary button-rounded">b1</button>
+<button type="button" class="button button-3d button-action button-pill">b2</button>
+<button type="button" class="button button-3d button-caution">b3</button>
+<button class="button button-3d button-action button-circle button-jumbo"><i class="fa fa-thumbs-up"></i></button>
+
+
+
+<h2>RAISED BUTTONS</h2>
+
+<button type="button" class="button button-raised button-primary button-pill">b1</button>
+
+
+
+<h2>GLOWING</h2>
+
+<button type="button" class="button button-glow button-rounded button-raised button-primary">b1</button>
+<button type="button" class="button button-glow button-border button-rounded button-primary">b2</button>
+<button type="button" class="button button-glow button-rounded button-highlight">b3</button>
+
+
+
+<h2>Button Groups</h2>
+ 
+  <div class="button-group">
+    <button type="button" class="button button-primary">Option 1</button>
+    <button type="button" class="button button-primary">Option 2</button>
+    <button type="button" class="button button-primary">Option 3</button>
+ 
+    <!-- DROPDOWN MENU -->
+    <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+      <a href="#" class="button button-primary"> Select Me <i class="fa fa-caret-down"></i></a>
+ 
+      <ul class="button-dropdown-list is-below">
+        <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+        <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+        <li class="button-dropdown-divider"><a href="#">Option Link 3</a></li>
+      </ul>
+    </span>
+  </div>
+  
+  <br>
+ 
+  <div class="button-group">
+    <button type="button" class="button button-pill button-action">Option 1</button>
+    <button type="button" class="button button-pill button-action">Option 2</button>
+    <button type="button" class="button button-pill button-action">Option 3</button>
+  </div>
+  
+  <br>
+ 
+  <div class="button-group">
+    <button type="button" class="button button-royal button-rounded button-raised">Option 1</button>
+    <button type="button" class="button button-royal button-rounded button-raised">Option 2</button>
+    <button type="button" class="button button-royal button-rounded button-raised">Option 3</button>
+  </div>
+
+
+
+<h2>STACKED BUTTONS</h2>
+ 
+  <a href="#" class="button button-block button-rounded button-large">Go</a>
+  <a href="#" class="button button-block button-rounded button-primary button-large">Go</a>
+  <a href="#" class="button button-block button-rounded button-action button-large">Go</a>
+  <a href="#" class="button button-block button-rounded button-highlight button-large">Go</a>
+  <a href="#" class="button button-block button-rounded button-caution button-large">Go</a>
+  <a href="#" class="button button-block button-rounded button-royal button-large">Go</a>
+
+
+
+<h2>DROPDOWN BUTTONS</h2>
+
+<span class="button-dropdown" data-buttons="dropdown">
+    <button class="button button-rounded">
+      Select Me <i class="fa fa-caret-down"></i>
+    </button>
+ 
+    <ul class="button-dropdown-list">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+ 
+  <span class="button-dropdown button-dropdown-primary" data-buttons="dropdown">
+    <button class="button button-primary button-large">
+      <i class="fa fa-bars"></i> Select Me
+    </button>
+ 
+    <ul class="button-dropdown-list is-below">
+      <li><a href="http://unicorn-ui.com/"><i class="fa fa-heart-o"></i> Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+ 
+ 
+  <span class="button-dropdown button-dropdown-action" data-buttons="dropdown">
+    <button class="button button-action">
+      Select Me <i class="fa fa-caret-up"></i>
+    </button>
+ 
+    <ul class="button-dropdown-list is-above">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li><a href="http://unicorn-ui.com/">Option Link 2</a></li>
+      <li class="button-dropdown-divider">
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+ 
+  <span class="button-dropdown button-dropdown-plain" data-buttons="dropdown">
+    <button class="button button-caution button-pill">
+      Select Me <i class="fa fa-caret-down"></i>
+    </button>
+ 
+    <ul class="button-dropdown-list">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li class="button-dropdown-divider">
+        <a href="http://unicorn-ui.com/">Option Link 2</a>
+      </li>
+      <li>
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+ 
+  <span class="button-dropdown button-dropdown-inverse" data-buttons="dropdown">
+    <a href="#" class="button button-inverse">
+        <i class="fa fa-envelope"></i> Select Me <i class="fa fa-caret-down"></i>
+    </a>
+ 
+    <ul class="button-dropdown-list is-below">
+      <li><a href="http://unicorn-ui.com/">Option Link 1</a></li>
+      <li class="button-dropdown-divider">
+        <a href="http://unicorn-ui.com/">Option Link 2</a>
+      </li>
+      <li>
+        <a href="#">Option Link 3</a>
+      </li>
+    </ul>
+  </span>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+</body>
+
+</html>
